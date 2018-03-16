@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>12.0.0</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{91A1F4BC-65C0-42E6-B5FD-320A2D59AF71}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>YamlDotNet.PerformanceTests.vlatest</RootNamespace>
@@ -41,7 +40,7 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\..\YamlDotNet\YamlDotNet.csproj">
-      <Project>{BF32DE1B-6276-4341-B212-F8862ADBBA7A}</Project>
+      <Project>{ABFC2E37-119B-439D-82B6-49E9680EEA90}</Project>
       <Name>YamlDotNet</Name>
     </ProjectReference>
     <ProjectReference Include="..\YamlDotNet.PerformanceTests.Lib\YamlDotNet.PerformanceTests.Lib.csproj">

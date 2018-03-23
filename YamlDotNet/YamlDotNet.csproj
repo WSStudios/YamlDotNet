@@ -21,9 +21,6 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>..\..\$(OutputToProject)\Assets\DLLs</OutputPath>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release-Unsigned|AnyCPU' ">
-    <OutputPath>..\..\$(OutputToProject)\Assets\DLLs</OutputPath>
-  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release-Signed|AnyCPU' ">
     <OutputPath>..\..\$(OutputToProject)\Assets\DLLs</OutputPath>
   </PropertyGroup>

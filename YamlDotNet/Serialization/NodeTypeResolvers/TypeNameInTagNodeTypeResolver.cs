@@ -28,12 +28,17 @@ namespace YamlDotNet.Serialization.NodeTypeResolvers
     {
         bool INodeTypeResolver.Resolve(NodeEvent nodeEvent, ref Type currentType)
         {
+            Type predefinedType;
             if (!string.IsNullOrEmpty(nodeEvent.Tag))
             {
                 // If type could not be loaded, make sure to pass resolving
                 // to the next resolver
-                currentType = Type.GetType(nodeEvent.Tag.Substring(1), throwOnError: false);
-                return currentType != null;
+                predefinedType = Type.GetType(nodeEvent.Tag.Substring(1), throwOnError: false);
+                if (predefinedType != null)
+                {
+                    currentType = predefinedType;
+                    return true;
+                }
             }
             return false;
         }
